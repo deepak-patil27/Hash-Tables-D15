@@ -6,7 +6,11 @@ import java.util.Map;
 public class MyHashMap {
 	public static void main(String[] args) {
 		// Declaring the String
-		String str = "to be or not be";
+		String str = "Paranoids are not\r\n"
+				+ "paranoid because they are paranoid but\r\n"
+				+ "because they keep putting themselves\r\n"
+				+ "deliberately into paranoid avoidable\r\n"
+				+ "situations";
 		// Declaring a HashMap of <String, Integer>
 		Map<String, Integer> hashMap = new HashMap<>();
 
@@ -31,7 +35,7 @@ public class MyHashMap {
 				hashMap.put(word, integer + 1);
 			}
 		}
-		System.out.println("Sentence: " + str);
+		System.out.println("paragraph phrase: \n" + str);
 		System.out.println("\n" + hashMap);
 	}
 }
