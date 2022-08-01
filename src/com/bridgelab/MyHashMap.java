@@ -6,11 +6,12 @@ import java.util.Map;
 public class MyHashMap {
 	public static void main(String[] args) {
 		// Declaring the String
-		String str = "Paranoids are not\r\n"
-				+ "paranoid because they are paranoid but\r\n"
-				+ "because they keep putting themselves\r\n"
-				+ "deliberately into paranoid avoidable\r\n"
-				+ "situations";
+		String str = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+		
+		String wordToBeRemove = "avoidable";
+		 str = str.replaceAll("avoidable", "");
+		 str = str.trim();
+		
 		// Declaring a HashMap of <String, Integer>
 		Map<String, Integer> hashMap = new HashMap<>();
 
